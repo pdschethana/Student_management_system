@@ -1,0 +1,238 @@
+/* Reset */
+/* Reset */
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    background-color: skyblue;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 25px;
+    position: relative;
+    left: 5%;
+    color: white;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+ul {
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: skyblue;
+}
+
+/* Section and Image Styling */
+.section1 {
+    padding-bottom: 30px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.main_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img_text {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    color: white;
+    background-color: midnightblue;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Welcome Section Styling */
+.welcome_img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Teacher and Course Section Styling */
+.row {
+    margin: 0; /* Removes unnecessary margins */
+    display: flex; /* Ensures alignment */
+    justify-content: space-between; /* Distributes items evenly */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.col-md-4 {
+    text-align: center; /* Centers content in each column */
+    padding: 10px; /* Adds spacing between columns */
+}
+
+.teacher {
+    width: 100%; /* Make the images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    margin-bottom: 10px; /* Adds space below images */
+}
+
+.col-md-4 p {
+    margin-top: 10px; /* Adds space above text */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .col-md-4 {
+        margin-bottom: 20px; /* Adds spacing for stacked items */
+    }
+}
+/* Contact Form Styling */
+.contact-form {
+    margin: 50px auto; /* Center the form on the page */
+    width: 50%; /* Adjust width for responsiveness */
+    background-color: #f9f9f9; /* Light background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: skyblue;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 90%; /* Full width for smaller screens */
+    }
+}
+
+footer{
+    background-color: #555;
+    height: 70px;
+    width: 100%;
+}
+.footer_text{
+    text-align: center;
+    color: #ccc;
+    
+    padding-top: 20px;
+}
+.adm{
+    color: rgb(255, 17, 0);
+}
+.form_deg{
+    padding-top: 200px;
+}
+.label_deg{
+    display: inline-block;
+    color: skyblue;
+    width: 100px;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.login_form{
+    background-color: black;
+    width: 400px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+.title_deg{
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.body_deg{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
